@@ -1,0 +1,106 @@
+/* Header css */
+header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header h1 {
+      /*background-image: "../images/principal.png";*/
+      background-color: rgb(54, 132, 204);
+      margin: 0px;
+      padding-top: 100px;
+      padding-bottom: 100px;
+  }
+  
+  header nav {
+    background-color: black;
+    display: flex;
+  }
+  
+  header a {
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: black;
+  }
+  
+  #currentPageLink{
+      background-color: lightgray;
+      color: black;
+      font-weight: bold;
+  }
+  
+  header nav a:nth-child(2):hover {
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+  }
+  
+  header nav a:nth-child(3):hover {
+    background-color: green;
+    color: black;
+    font-weight: bold;
+  }
+  
+  header nav a:nth-child(4):hover {
+    background-color: blue;
+    color: black;
+    font-weight: bold;
+  }
+  
+  header nav a:nth-child(5):hover {
+    background-color: red;
+    color: black;
+    font-weight: bold;
+  }
+  
+  #top-nav {
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+  }
+  
+  #top-nav a:hover{
+      background-color: rgb(54, 132, 204);
+      color: black;
+  }
+  
+
+/* Body css */
+body {
+  margin: 0;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
+  justify-content: center;
+}
+
+#gauche {
+  border-right: 2px solid black;
+  background-color: violet;
+  flex: 20%;
+  margin: 0;
+}
+
+#milieux {
+  margin: auto;
+  background-color: crimson;
+  flex: 80%;
+  margin: 0;
+}
+
+
+
+/* Footer css*/
+footer {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  text-align: center;
+  background-color: rgb(54, 132, 204);
+}
