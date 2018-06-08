@@ -84,6 +84,17 @@ header nav a:nth-child(6):hover {
   color: black;
 }
 
+#top-nav img {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.spacer {
+  visibility: hidden;
+  flex-grow: 1;
+}
+
 /* Body css */
 body {
   margin: 0;
