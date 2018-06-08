@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../style/inscription.css" />
+    <link rel="icon" type="image/png" href="../../images/favicon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Aldrich|Arbutus" rel="stylesheet">
+    <title>FOFCVCE</title>
+</head>
+
+<body>
+    <header>
+        <nav id="top-nav">
+            <img src="../../images/favicon.png">
+            <span class="spacer"></span>
+            <a id="currentPageLink">Inscription</a>
+        </nav>
+        <h1>Fictional original fantastic computer virtual console experience</h1>
+        <nav>
+            <a href="../../index.html">Accueil</a>
+            <a href="../PC/index.html">PC</a>
+            <a href="../Xbox/index.html">Xbox One</a>
+            <a href="../PS4/index.html">PS4</a>
+            <a href="../NSwitch/index.html">Nintendo Switch</a>
+            <a href="../Retro/index.html">Console rétro</a>
+        </nav>
+    </header>
+
+    <section class="flexbox">
+        <div id="gauche">
+            <span>Boutique</span>
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="../../images/joystick.png">Manette</a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../../images/mouse.png">Accessoires</a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../../images/ecran.png">Écrans</a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../../images/pacman.png">Jeux</a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../../images/retro.png">Découverte rétro</a>
+                </li>
+            </ul>
+            <span>À propos</span>
+            <p>Ce site web est un portail pour tout ce qui est en lien avec les platformes informatiques tels que les ordinateurs
+                et consoles</p>
+        </div>
+        <div id="milieux">
+            <form>
+                <h1>Inscription aux bulletins et à la boutique</h1>
+
+                <fieldset>
+                    <legend>Informations principale</legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <label>Courriel:</label>
+                                <img src="../../images/red-star.png">
+                            </td>
+                            <td>
+                                <input type="email" required oninvalid="this.setCustomValidity('Veuiller entrer votre adresse courriel')"
+                                oninput="setCustomValidity('')">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Mot de passe:</label>
+                                <img src="../../images/red-star.png">
+                            </td>
+                            <td>
+                                <input type="password" placeholder="Au moins 6 lettres ou nombres" pattern=".{6,}" required title="6 lettres minimum">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Validation:</label>
+                                <img src="../../images/red-star.png">
+                            </td>
+                            <td>
+                                <input type="password" placeholder="Ressaisir le mot de passe" pattern=".{6,}" required title="6 lettres minimum">
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Informations personnel</legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <label>Prénom:</label>
+                                <img src="../../images/red-star.png">
+                            </td>
+                            <td>
+                                <input type="text" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Nom:</label>
+                                <img src="../../images/red-star.png">
+                            </td>
+                            <td>
+                                <input type="text" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Date de naissance:</label>
+                                <img src="../../images/red-star.png">
+                            </td>
+                            <td>
+                                <input type="date" required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label>Pays:</label>
+                                <img src="../../images/red-star.png">
+                            </td>
+                            <td>
+                                <select class="full" required>
+                                    <option value="Canada">Canada</option>
+                                    <option value="US">États-Unis</option>
+                                    <option value="Mexique">Mexique</option>
+                                    <!--Ajouter des pays-->
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Province:</label>
+                            </td>
+                            <td>
+                                <input type="text" placeholder="Code de 2 caractères" maxlength="2">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label>Ville:</label>
+                                <img src="../../images/red-star.png">
+                            </td>
+                            <td>
+                                <input type="text" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Adresse:</label>
+                                <img src="../../images/red-star.png">
+                            </td>
+                            <td>
+                                <input type="text" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Code postal:</label>
+                                <img src="../../images/red-star.png">
+                            </td>
+                            <td>
+                                <input type="text" placeholder="A1A 1A1" pattern="[aA-zZ]{1}[0-9]{1}[aA-zZ]{1} [0-9]{1}[aA-zZ]{1}[0-9]{1}" required title="le format doit être A1A 1A1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Numéro de téléphone:</label>
+                            </td>
+                            <td>
+                                <input type="tel" placeholder="999-999-9999" pattern="[0-9]{3}-{1}[0-9]{3}-{1}[0-9]{4}" title="Le format doit être 999-999-9999">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Couleur préféré:</label>
+                            </td>
+                            <td>
+                                <input type="color">
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+
+                <fieldset id="footerfield">
+                    <legend>Envoyer votre soumission</legend>
+                    <input type="Submit" value="Envoyer" id="envoyer">
+                    <input type="reset" value="Effacer" id="effacer">
+                </fieldset>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; INF1493 Projet : Fictional original fantastic computer virtual console experience, présenté à Daniel Yapi.
+            Tous droits réservés.
+            <br>Réalisé par François-Xavier Mousseau
+            <br> juin 2018
+        </p>
+    </footer>
+</body>
+
+</html>
