@@ -69,8 +69,7 @@
                                 <img src="../../images/red-star.png">
                             </td>
                             <td>
-                                <input type="email" required oninvalid="this.setCustomValidity('Veuiller entrer votre adresse courriel')"
-                                oninput="setCustomValidity('')">
+                                <input type="email" required oninvalid="this.setCustomValidity('Veuiller entrer votre adresse courriel')" oninput="setCustomValidity('')">
                             </td>
                         </tr>
                         <tr>
@@ -195,9 +194,11 @@
                 </fieldset>
 
                 <fieldset id="footerfield">
-                    <legend>Envoyer votre soumission</legend>
-                    <input type="Submit" value="Envoyer" id="envoyer">
-                    <input type="reset" value="Effacer" id="effacer">
+                    <legend>Envoyer vos informations</legend>
+                    <div>
+                        <input type="Submit" value="Envoyer" id="envoyer" class="ButtonSoumission">
+                        <input type="reset" value="Effacer" id="effacer" class="ButtonSoumission">
+                    </div>
                 </fieldset>
             </form>
         </div>
