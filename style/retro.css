@@ -183,6 +183,19 @@ html {
     padding: 5px 5px 5px 5px;
     background-color: white;
   }
+
+  #milieux h1 {
+    font-size: 40px;
+  }
+
+  #milieux img {
+    width: 550px;
+    height: 300px;
+  }
+
+  #imageWii {
+    max-width: 400px;
+  }
   
   /* Footer css*/
   footer {
