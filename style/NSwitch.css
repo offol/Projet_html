@@ -177,11 +177,52 @@ html {
   
   #milieux > div {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-bottom: 10px;
     margin-right: 10px;
     padding: 5px 5px 5px 5px;
     background-color: white;
+    align-self: center;
+    border: 2px solid red;
+  }
+
+  #milieux img {
+    width: 400px;
+    height: 400px;
+  }
+
+  #milieux iframe {
+    width: 500px;
+    height: 400px;
+    margin: 10px;
+  }
+
+  #presentation {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 5px 5px 5px 5px;
+    background-color: white;
+    align-self: center;
+    border: 2px solid red;
+  }
+
+  #presentation img {
+    align-self: center;
+  }
+
+  #presentation iframe {
+    align-self: center;
+  }
+
+  #resumerArticle {
+    flex-direction: column;
+  }
+
+  #imageArticle img {
+    width: 400px;
+    height: 200px;
   }
   
   /* Footer css*/
