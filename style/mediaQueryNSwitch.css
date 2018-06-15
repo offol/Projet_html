@@ -183,6 +183,7 @@ html {
     background-color: white;
     align-self: center;
     border: 2px solid red;
+    width: 95%;
   }
 
   #presentation {
