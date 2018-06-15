@@ -228,6 +228,14 @@ html {
     display: flex;
     flex-direction: column;
   }
+
+  li p {
+    max-width: 600px;
+  }
+  
+  #reference {
+    border-top: 2px solid black;
+  }
   
   /* Footer css*/
   footer {
